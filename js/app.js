@@ -1,2 +1,2 @@
 angular.module('WhenTheySayItApp', ['firebase'])
-	.constant('FIREBASE_REF', 'https://<YOUR-FIREBASE-APP>.firebaseio.com/movies');
+	.constant('FIREBASE_REF', 'https://vivid-torch-9530.firebaseio.com/movies');
