@@ -1,0 +1,23 @@
+{
+  "name": "when_the_say_it",
+  "version": "1.0.0",
+  "description": "Tells the exact time the name of the movie is said so you'll know when things get serious!",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/Kphillycat/When_They_Say_It"
+  },
+  "keywords": [
+    "movies",
+    "quotes",
+    "title"
+  ],
+  "author": "Keith Williams Jr. (Kphillycat)",
+  "license": "ISC"
+}
