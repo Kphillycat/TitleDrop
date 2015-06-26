@@ -1,7 +1,6 @@
 angular.module('WhenTheySayItApp')
-	.service('grabMoviesService', ['$http', function($http) {
-		$http({
-			method: 'GET',
-			
-		});
-	}]);
+	.service('grabMoviesService', function(FIREBASE_URL, $firebaseArray) {
+    var ref = new Firebase(FIREBASE_URL);
+		
+    return $firebaseArray(ref);
+	});
