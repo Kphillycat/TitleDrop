@@ -1,1 +1,1 @@
-'member to ```npm install``` before you anything
+'member to ```npm install``` before you do anything
