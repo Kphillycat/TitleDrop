@@ -1,4 +1,4 @@
-angular.module('WhenTheySayItApp')
+angular.module('TitleDrop')
 	.controller('listController', ['grabMoviesService', function(grabMoviesService){
 		var vm = this;
 		// create movie array from service
