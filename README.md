@@ -1,1 +1,4 @@
-'member to ```npm install``` before you do anything
+'member to 
+```npm install```
+```json-server --watch data.json``` 
+before you do anything
