@@ -2,9 +2,14 @@
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
 	<head>
 		<title>Title Drop</title>
+		<!-- Styles -->
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<link rel="stylesheet" type="text/css" href="css/moviesList.css">
+		<link rel="stylesheet" type="text/css" href="css/animations.css">
+		<!-- Scripts -->
+		<!-- Angular -->
 		<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular-animate.js"></script>
 		<!-- Firebase -->
 		<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
 		<!-- AngularFire -->
@@ -15,12 +20,11 @@
 		<script type="text/javascript" src="js/app/app.js"></script>
 		<script type="text/javascript" src="js/app/moviesList/moviesListController.js"></script>
 		<script type="text/javascript" src="js/app/moviesList/grabMoviesService.js"></script>
-
 	</head>
 	<body ng-app="TitleDrop">
 		<div class="container" ng-controller="listController as list">
 			<div class="movie-card" ng-repeat="movie in list.movies">
-				<div class="title">{{movie.title}}</div> 
+				<div class="title">{{movie.title}}</div>
 				<div class="time">{{movie.time}}</div>
 			</div>
 		</div>
