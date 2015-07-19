@@ -20,12 +20,12 @@
 		<script type="text/javascript" src="js/app/app.js"></script>
 		<script type="text/javascript" src="js/app/moviesList/moviesListController.js"></script>
 		<script type="text/javascript" src="js/app/moviesList/grabMoviesService.js"></script>
+		<script type="text/javascript" src="js/app/movieShow/movieShowDirective.js"></script>
 	</head>
 	<body ng-app="TitleDrop">
 		<div class="container" ng-controller="listController as list">
 			<div class="movie-card" ng-repeat="movie in list.movies">
-				<div class="title">{{movie.title}}</div>
-				<div class="time">{{movie.time}}</div>
+				<movie-card></movie-card>
 			</div>
 		</div>
 	</body>
