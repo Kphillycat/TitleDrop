@@ -1,8 +1,18 @@
-.ng-enter {
-  opacity: 0;
+.ng-enter,
+.ng-leave {
   transition: opacity 1s;
 }
-
+.ng-enter,
+.ng-leave-active {
+    opacity: 0;
+}
 .ng-enter-active {
   opacity: 1;
+}
+
+/*For the adding of animations on each element*/
+.ng-enter-stagger,
+.ng-leave-stagger {
+  transition-delay: 100ms;
+  transition-duration: 0;
 }

@@ -10,3 +10,12 @@
 
   flex-wrap: wrap;
 }
+
+.search {
+  width: 100%;
+}
+
+.search input[type="text"] {
+  width: 75%;
+  height: 30px;
+}
