@@ -6,5 +6,6 @@ function grabMoviesService($http, $firebaseArray, FIREBASE_URL) {
     // var ref = new Firebase(FIREBASE_URL);
 	// Commented out due to firewall issues
 	// data = $firebaseArray(ref);
-	return $http.get('http://localhost:3000/movies');
+	// for local db
+	// return $http.get('http://localhost:3000/movies');
 }

@@ -9,13 +9,22 @@
   display: flex;
 
   flex-wrap: wrap;
+  font-family: baumans, sans-serif;
 }
 
-.search {
+.add-movie-form, .search {
   width: 100%;
+  margin: 40px 0;
+  text-align: center;
+  font-size: 34px;
 }
 
-.search input[type="text"] {
-  width: 75%;
+input[type="text"] {
+  width: 100%;
   height: 30px;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
 }

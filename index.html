@@ -16,6 +16,8 @@
 		<script src="https://cdn.firebase.com/libs/angularfire/1.1.1/angularfire.min.js"></script>
 		<!-- GreenSock -->
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+		<!-- Adobe Web Fonts -->
+		<script src="//use.edgefonts.net/baumans.js"></script>
 		<!-- TitleDrop -->
 		<script type="text/javascript" src="js/app/app.js"></script>
 		<script type="text/javascript" src="js/app/moviesList/moviesListController.js"></script>
@@ -24,14 +26,27 @@
 	</head>
 	<body ng-app="TitleDrop">
 		<div class="container" ng-controller="listController as list">
+			<!-- Search for movies -->
 			<div class="search">
-				<label for="search">Search: </label>
+				<label for="search">Search</label>
 				<input type="text" name="search" id="search" ng-model="searchText">
 			</div>
 
-			<div class="movie-card" ng-repeat="movie in list.movies | filter:searchText">
-				<movie-card></movie-card>
+			<!-- Movies -->
+			<div class="movies">
+				<div class="movie-card" ng-repeat="movie in list.movies | filter:searchText">
+					<movie-card></movie-card>
+				</div>
 			</div>
+
+			<!-- push a new movie onto the array -->
+			<form class="add-movie-form" name="add-movie-form" ng-submit="list.addMovie()">
+				<label for="add-movie-form" class="add-movie">Add Movie</label>
+				<input type="text" ng-model="list.movieTitle" placeholder="Movie Title" />
+				<input type="text" ng-model="list.movieTime" placeholder="Movie Time" />
+				<br />
+				<button type="submit">Add Movie</button>
+			</form>
 		</div>
 	</body>
 </html>
